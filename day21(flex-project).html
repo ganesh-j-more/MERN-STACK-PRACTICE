@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Project</title>
+  <style>
+    .container{
+      background-color: rgb(238, 17, 17);
+      color: white;
+      border: solid white 5px;
+     display: flex;
+     flex-direction: row;
+     width: 450px;
+     
+    }
+    .photo{
+      background-color: aqua;
+      width: 100%;
+      margin: 2px;
+      padding: 2px;
+      display: flex;
+      flex-direction: column;
+     
+    }
+    .text{
+      background-color: blueviolet;
+      width: 100%;
+      border: 2px solid white;
+
+      
+      margin: 2px;
+      padding: 2px;
+    }
+    p{
+      border:  solid white 5px;
+    }
+    @media (max-width:500px){
+      .container{
+        flex-direction: column;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="text">
+      <p>Enter Your Name </p>
+      <p>Enter The A New Create Password</p>
+    </div>
+    <div class="photo">
+      <img src="box3-2.jpg">
+    </div>
+  </div>
+</body>
+</html>
