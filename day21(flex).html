@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Query Using Flex Boxes in CSS</title>
+  <style>
+    .container{
+      background-color: aqua;
+      border: black solid 5px;
+      margin: 10px;
+      padding: 10px;
+      display: flex;
+    }
+    .box{
+      height: 200px;
+      width: 200px;
+      margin: 2px;
+      margin-left: 30px;
+      padding: 4px;
+
+      color: white;
+      font-weight: bold;
+      align-content: center;
+      text-align: center;
+
+
+    }
+    #box1{
+      background-color: black;
+      
+    }
+      #box2{
+      background-color: rgb(112, 192, 21);
+    }
+      #box3{
+      background-color: rgb(230, 8, 8);
+    }
+      #box4{
+      background-color: rgb(49, 8, 231);
+    }
+      #box5{
+      background-color: rgb(231, 8, 157);
+    }
+      @media (min-width:500px) {
+        .container{
+        flex-direction: row;
+      }
+    }
+      @media (max-width:500px) {
+           .container{
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box" id="box1">Soma</div>
+    <div class="box" id="box2">Shri</div>
+    <div class="box" id="box3">Pankaj</div>
+    <div class="box" id="box4">Kishuu</div>
+    <div class="box" id="box5">Aaba</div>
+  </div>
+</body>
+</html>
